@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 import { KnexModule } from 'nest-knexjs';
-import { BoardsModule } from './boards/boards.module';
 import { UsersModule } from './users/users.module';
 
 @Module({
@@ -18,7 +17,6 @@ import { UsersModule } from './users/users.module';
         },
       },
     }),
-    BoardsModule,
     UsersModule,
   ],
 })
